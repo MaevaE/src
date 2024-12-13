@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulaire - Se connecter / S'inscrire</title>
-  <!-- Lien vers le CDN de Tailwind CSS -->
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="/dist/styles.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
   <style>
     .zoom:active {
-      transform: scale(1.2); /* Agrandit le lien de 20% */
-      transition: transform 0.2s ease-in-out; /* Durée et effet de la transition */
+      transform: scale(1.2); 
+      transition: transform 0.2s ease-in-out; 
   }
      </style>
 </head>
@@ -97,5 +97,42 @@
 
     </div>
   </div>
+</body>
+</html>
+--->
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>formulaire tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link href="/dist/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200  flex  content-center  justify-center  h-full items-center">
+    <div class="bg-white  shadow-lg  max-w-lg  md:flex">
+        <img class="flex-1 w-full h-40  md:h-full object-cover" src="https://picsum.photos/id/1047/200/300" alt="image">
+    
+        <div class="p-4  flex-1  md:flex md:flex-col justify-center items-center">
+
+            <h1 class="text-2xl  font-bold  text-gray-900  mb-2">connection</h1>
+            <div class="mb-4">
+
+                <label for="username" class="block  text-gray-600 mb-2">Nom utilisateur</label>
+                <input type="text" id="username" name="username" class="focus:shadow-outline border shadow-inner py-2 px-3  text-gray-700 w-full ">
+
+            </div>
+
+            <div class="mb-4">
+
+                <label for="password" class="block  text-gray-600 mb-2">mot de passe</label>
+                <input type="password" id="password" name="password" class="focus:shadow-outline border shadow-inner py-2 px-3  text-gray-700 w-full">
+
+            </div>
+            <button type="submit" class="bg-pink-400 py-2 px-4 rounded-sm hover:bg-pink-600 hover:text-white ">Se connecter</button>
+        </div>
+    </div>
+
 </body>
 </html>
